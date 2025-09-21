@@ -84,9 +84,9 @@ class FloodFillAlgoritmo {
         }
 
         salvarFrameAnimacao(); // frame final, onde esta tudo pintado
-        System.out.println("✅ Flood Fill com PILHA concluído!");
-        System.out.println("🎨 Pixels pintados: " + pixelsPintados);
-        System.out.println("⚫ Bordas pretas foram respeitadas (não pintadas)");
+        System.out.println("Flood Fill com PILHA concluído!");
+        System.out.println("Pixels pintados: " + pixelsPintados);
+        System.out.println("Bordas pretas foram respeitadas (não pintadas)");
     }
 
 //fila
@@ -97,7 +97,7 @@ class FloodFillAlgoritmo {
 
         // verifica se o ponto inicial é uma borda preta, se for, nada acontece
         if (corOriginal.getRed() == 0 && corOriginal.getGreen() == 0 && corOriginal.getBlue() == 0) {
-            System.out.println("⚫ Ponto inicial é uma borda preta. Cancelando operação.");
+            System.out.println("Ponto inicial é uma borda preta. Cancelando operação.");
             return;
         }
 
@@ -147,9 +147,9 @@ class FloodFillAlgoritmo {
         }
 
         salvarFrameAnimacao(); // Frame final
-        System.out.println("✅ Flood Fill com FILA concluído!");
-        System.out.println("🎨 Pixels pintados: " + pixelsPintados);
-        System.out.println("⚫ Bordas pretas foram respeitadas (não pintadas)");
+        System.out.println("Flood Fill com FILA concluído!");
+        System.out.println("Pixels pintados: " + pixelsPintados);
+        System.out.println("Bordas pretas foram respeitadas (não pintadas)");
     }
 
     // Método auxiliar para adicionar vizinho apenas se for válido e não for borda preta
