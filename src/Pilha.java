@@ -34,6 +34,7 @@ class Pilha {
         return coord;
     }
 
+
     public boolean estaVazia() {
         return topo == null;
     }

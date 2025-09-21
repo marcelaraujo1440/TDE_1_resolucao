@@ -106,6 +106,7 @@ class AnalisadorImagem {
             return;
         }
 
+
         visitado[x][y] = true;
 
         // marca os vizinhos

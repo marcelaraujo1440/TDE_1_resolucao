@@ -9,7 +9,7 @@ public class Main {
         try {
             String caminhoEntrada = "src/tde1_.png";
 
-            // verificao do arquivo
+            //verificao do arquivo
             File arquivoTeste = new File(caminhoEntrada);
             if (!arquivoTeste.exists()) {
                 System.err.println("Arquivo não encontrado: " + caminhoEntrada);

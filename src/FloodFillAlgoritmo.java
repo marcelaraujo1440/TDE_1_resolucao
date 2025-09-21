@@ -8,6 +8,7 @@ import javax.imageio.ImageIO;
 
 
 class FloodFillAlgoritmo {
+
     private BufferedImage imagem;
     private int largura, altura;
     private List<BufferedImage> animacao;
