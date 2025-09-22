@@ -16,14 +16,14 @@ class Pilha {
         topo = null;
         tamanho = 0;
     }
-
+        //push
     public void empilhar(Coordenada coord) {
         No novo = new No(coord);
         novo.proximo = topo;
         topo = novo;
         tamanho++;
     }
-
+        //pop
     public Coordenada desempilhar() {
         if (estaVazia()) {
             return null;

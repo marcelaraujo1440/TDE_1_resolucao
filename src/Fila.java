@@ -16,7 +16,7 @@ class Fila {
         frente = tras = null;
         tamanho = 0;
     }
-
+        //enqueue
     public void enfileirar(Coordenada coord) {
         No novo = new No(coord);
         if (tras == null) {
@@ -27,7 +27,7 @@ class Fila {
         }
         tamanho++;
     }
-
+        //dequeue
     public Coordenada desenfileirar() {
         if (estaVazia()) {
             return null;

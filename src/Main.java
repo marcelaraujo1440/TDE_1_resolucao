@@ -41,13 +41,13 @@ public class Main {
 
             System.out.println("Tamanho aproximado de cada quadrado: " + quadradoLargura + " x " + quadradoAltura);
 
-            // adiciona pontos no centro de alguns quadrados para teste
+            // adiciona pontos no centro de alguns quadrados
             pontosParaTestar.add(new Coordenada(quadradoLargura / 2, quadradoAltura / 2)); // Quadrado superior esquerdo
             pontosParaTestar.add(new Coordenada(quadradoLargura * 2 + quadradoLargura / 2, quadradoAltura / 2)); // Quadrado superior meio
             pontosParaTestar.add(new Coordenada(quadradoLargura / 2, quadradoAltura * 2 + quadradoAltura / 2)); // Quadrado meio esquerdo
             pontosParaTestar.add(new Coordenada(largura / 2, altura / 2)); // Centro da imagem
 
-            System.out.println("\n  FLOOD FILL COM PILHA (UM QUADRADO) ===");
+            System.out.println("\n  FLOOD FILL COM PILHA");
 
             // escolhe o primeiro ponto valido (nao pode ser preto)
             Coordenada pontoEscolhido = null;
@@ -82,9 +82,9 @@ public class Main {
             floodFill.resetarImagem(caminhoEntrada);
 
 
-            System.out.println("\n FLOOD FILL COM FILA (UM QUADRADO)");
+            System.out.println("\n FLOOD FILL COM FILA");
 
-            System.out.println(" Pintando o MESMO quadrado com VERDE usando FILA...");
+            System.out.println(" Pintando o MESMO quadrado usando FILA...");
             System.out.println(" Ponto inicial: " + pontoEscolhido);
 
             floodFill.floodFillComFila(pontoEscolhido.getX(), pontoEscolhido.getY(), Color.GREEN);
@@ -93,7 +93,7 @@ public class Main {
 
             System.out.println(" Preenchimento com FILA concluído!");
 
-            System.out.println("\n --- PROCESSAMENTO CONCLUÍDO COM SUCESSO ---");
+            System.out.println("\n PROCESSAMENTO CONCLUÍDO");
             System.out.println(" Arquivos que foram gerados:");
             System.out.println("    resultado_um_quadrado_pilha.png (um quadrado verde - pilha)");
             System.out.println("    resultado_um_quadrado_fila.png (um quadrado verde - fila)");
@@ -104,7 +104,7 @@ public class Main {
             //sessao de tratamento de erros da imagem
         } catch (IOException e) {
             System.err.println(" Erro ao processar imagem: " + e.getMessage());
-            System.err.println("Certifique-se de que:");
+            System.err.println("Certifique que:");
             System.err.println("1. O arquivo 'tde1_.png' existe na pasta 'src/'");
             System.err.println("2. O arquivo não esta corrompido");
             System.err.println("3. Voce tem permissao para ler o arquivo");

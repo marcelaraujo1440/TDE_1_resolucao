@@ -175,8 +175,8 @@ class FloodFillAlgoritmo {
         Color corVizinho = new Color(imagem.getRGB(x, y));
 
         // so vai adiciona se:
-        // 1. A cor é igual à cor original (mesmo tipo de área)
-        // 2. NÃO é borda preta (RGB 0,0,0)
+        // 1. A cor é igual a cor original
+        // 2. NÃO é borda preta
         if (corVizinho.equals(corOriginal) &&
                 !(corVizinho.getRed() == 0 && corVizinho.getGreen() == 0 && corVizinho.getBlue() == 0)) {
             fila.enfileirar(new Coordenada(x, y));
@@ -188,7 +188,7 @@ class FloodFillAlgoritmo {
     }
 
     private void salvarFrameAnimacao() {
-        // Cria uma cópia da imagem atual
+        // cria uma cópia da imagem
         BufferedImage frame = new BufferedImage(largura, altura, imagem.getType());
         for (int x = 0; x < largura; x++) {
             for (int y = 0; y < altura; y++) {
